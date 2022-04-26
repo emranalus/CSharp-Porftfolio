@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tryCatch", "tryCatch\tryCatch.csproj", "{B6E5B5E4-6370-43AA-B51F-A2533235744C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ornekler", "ornekler\ornekler.csproj", "{6006B53A-E6F3-47A1-8B94-79BAC6FC2175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ornekler", "ornekler\ornekler.csproj", "{6006B53A-E6F3-47A1-8B94-79BAC6FC2175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppPractice", "WinFormsAppPractice\WinFormsAppPractice.csproj", "{B37ED3ED-F4BE-4911-BC8D-FFD6259357AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6006B53A-E6F3-47A1-8B94-79BAC6FC2175}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6006B53A-E6F3-47A1-8B94-79BAC6FC2175}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6006B53A-E6F3-47A1-8B94-79BAC6FC2175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37ED3ED-F4BE-4911-BC8D-FFD6259357AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37ED3ED-F4BE-4911-BC8D-FFD6259357AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37ED3ED-F4BE-4911-BC8D-FFD6259357AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37ED3ED-F4BE-4911-BC8D-FFD6259357AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
