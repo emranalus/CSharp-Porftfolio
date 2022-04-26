@@ -41,5 +41,29 @@ namespace WinFormsAppPractice
             }
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            int randomSelect;
+            for (int i = 0; i < 50; i++)
+            {
+                randomSelect = rand.Next(1, 51);
+                if (randomSelect % 2 == 0)
+                {
+                    listBox1.Items.Add(randomSelect);
+                }
+                else
+                {
+                    listBox2.Items.Add(randomSelect);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+        }
     }
 }
