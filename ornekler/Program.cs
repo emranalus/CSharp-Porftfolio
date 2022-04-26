@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace ornekler
 {
@@ -282,6 +283,27 @@ namespace ornekler
             dizi.Add(true);
 
             foreach (object i in dizi)
+            {
+                Console.WriteLine(i);
+            }
+
+            List<string> sehirler = new List<string>();
+            sehirler.Add("Adana");
+            sehirler.Add("Urfa");
+            sehirler.Add("Bursa");
+
+            List<int> sayilar = new List<int>();
+
+            Console.WriteLine("Kac eleman gireceksiniz: ");
+            int elemanSayisi = int.Parse(Console.ReadLine());
+
+            Random rnd = new Random();
+            for (int i = 0; i < elemanSayisi; i++)
+            {
+                sayilar.Add(rnd.Next(1,5000));
+            }
+
+            foreach (int i in sayilar)
             {
                 Console.WriteLine(i);
             }
