@@ -276,39 +276,86 @@ namespace ornekler
 
             #region ornek9_ArrayListler
 
-            ArrayList dizi = new ArrayList();
-            dizi.Add("Adana");
-            dizi.Add(1);
-            dizi.Add(DateTime.Now);
-            dizi.Add(true);
+            //ArrayList dizi = new ArrayList();
+            //dizi.Add("Adana");
+            //dizi.Add(1);
+            //dizi.Add(DateTime.Now);
+            //dizi.Add(true);
 
-            foreach (object i in dizi)
+            //foreach (object i in dizi)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //List<string> sehirler = new List<string>();
+            //sehirler.Add("Adana");
+            //sehirler.Add("Urfa");
+            //sehirler.Add("Bursa");
+
+            //List<int> sayilar = new List<int>();
+
+            //Console.WriteLine("Kac eleman gireceksiniz: ");
+            //int elemanSayisi = int.Parse(Console.ReadLine());
+
+            //Random rnd = new Random();
+            //for (int i = 0; i < elemanSayisi; i++)
+            //{
+            //    sayilar.Add(rnd.Next(1,5000));
+            //}
+
+            //foreach (int i in sayilar)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            #endregion
+
+            #region ornek10_classroom
+
+            // Create a list that holds names and surnames of an entire classroom
+            // Create a list that holds vize and final exam scores
+            // Calculate who passes and fails the class
+
+            List<string> nameSurname = new List<string>();
+            List<int> vize1 = new List<int>();
+            List<int> vize2 = new List<int>();
+            List<int> final = new List<int>();
+            List<float> sonuclar = new List<float>();
+
+            // Add Students
+            nameSurname.Add("Ali");
+            nameSurname.Add("Veli");
+            nameSurname.Add("Berse");
+
+            // Add Exam Notes
+            vize1.Add(40);
+            vize1.Add(50);
+            vize1.Add(60);
+
+            vize2.Add(40);
+            vize2.Add(50);
+            vize2.Add(60);
+
+            // Add Finals
+            final.Add(50);
+            final.Add(50);
+            final.Add(50);
+
+            float note;
+
+            for (int i = 0; i < vize1.Count; i++)
             {
-                Console.WriteLine(i);
+                note = (vize1[i] + vize2[i]) / 2 * 0.3f + final[i] * 0.7f;
+                sonuclar.Add(note);
             }
 
-            List<string> sehirler = new List<string>();
-            sehirler.Add("Adana");
-            sehirler.Add("Urfa");
-            sehirler.Add("Bursa");
-
-            List<int> sayilar = new List<int>();
-
-            Console.WriteLine("Kac eleman gireceksiniz: ");
-            int elemanSayisi = int.Parse(Console.ReadLine());
-
-            Random rnd = new Random();
-            for (int i = 0; i < elemanSayisi; i++)
+            foreach (var item in sonuclar)
             {
-                sayilar.Add(rnd.Next(1,5000));
-            }
-
-            foreach (int i in sayilar)
-            {
-                Console.WriteLine(i);
+                Console.WriteLine(item);
             }
 
             #endregion
+
         }
     }
 }
