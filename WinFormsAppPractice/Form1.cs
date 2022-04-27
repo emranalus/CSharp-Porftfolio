@@ -65,5 +65,66 @@ namespace WinFormsAppPractice
             listBox1.Items.Clear();
             listBox2.Items.Clear();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string deger = textBox1.Text;
+            int elemanSayisi = int.Parse(deger);
+            int saglama = 0;
+            int[] sayilar = new int[elemanSayisi];
+            int[] frekans = new int[11];
+            Random rand = new Random();
+
+            for (int i = 0; i < elemanSayisi; i++)
+            {
+                sayilar[i] = rand.Next(11);
+            }
+
+            for (int i = 0; i < elemanSayisi; i++)
+            {
+                switch (sayilar[i])
+                {
+                    case 1:
+                        frekans[0]++;
+                        break;
+                    case 2:
+                        frekans[1]++;
+                        break;
+                    case 3:
+                        frekans[2]++;
+                        break;
+                    case 4:
+                        frekans[3]++;
+                        break;
+                    case 5:
+                        frekans[4]++;
+                        break;
+                    case 6:
+                        frekans[5]++;
+                        break;
+                    case 7:
+                        frekans[6]++;
+                        break;
+                    case 8:
+                        frekans[7]++;
+                        break;
+                    case 9:
+                        frekans[8]++;
+                        break;
+                    case 10:
+                        frekans[9]++;
+                        break;
+                }
+            }
+
+            for (int i = 0; i < frekans.Length; i++)
+            {
+                listBox1.Items.Add(i + " => " +frekans[i]);
+                saglama += frekans[i];
+            }
+
+            listBox2.Items.Add(saglama);
+
+        }
     }
 }
