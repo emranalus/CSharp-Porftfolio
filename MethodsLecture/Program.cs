@@ -54,9 +54,6 @@ namespace MethodsLecture
             int[] rastgele = new int[50];
             List<int> asallar = new List<int>();
             
-            bool asalDegil;
-            int sayi = 3;
-            int sayac = 1;
             Random rand = new Random();
 
             // Listenin içinin doldurulması
@@ -66,15 +63,16 @@ namespace MethodsLecture
             }
 
             // Listedeki değişkenlerin kontrolu
-            // 1 ve kendisi hariç bir sayıya bölüneni bul o sayı asal değil elsi bas
+            // 1 ve kendisi hariç herhangi bir sayıya bölüneni bul o sayı asal değil elsi bas
             for (int i = 1; i < rastgele.Length; i++)
             {
 
-                for (int j = 2; j < rastgele.Length; j++)
+                for (int j = 2; j < rastgele.Length+1; j++)
                 {
                     // sayinin j ile bolumu 0 ise ve sayi j den farklı ise sayı asaldır
                     if (rastgele[i] % j == 0 && j != rastgele[i])
                     {
+                        // Asal Değil Geç
                         break;
                     }
                     else
@@ -86,6 +84,7 @@ namespace MethodsLecture
 
             }
 
+            // Asalları Bas
             for (int i = 0; i < asallar.Count; i++)
             {
                 Console.WriteLine(asallar[i]);
