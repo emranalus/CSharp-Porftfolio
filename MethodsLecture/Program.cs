@@ -64,6 +64,14 @@ namespace MethodsLecture
 
             // Listedeki değişkenlerin kontrolu
             // 1 ve kendisi hariç herhangi bir sayıya bölüneni bul o sayı asal değil elsi bas
+
+            //for (int i = 2; i < sayi; i++)
+            //{
+            //    if(sayi%i==0)
+            //}
+            // sayiyi kontrol eden metod yaz ve sayının kendisine kadar for dön eğer bölündüğü varsa
+            // asal değildir
+
             for (int i = 1; i < rastgele.Length; i++)
             {
 
@@ -89,6 +97,16 @@ namespace MethodsLecture
             {
                 Console.WriteLine(asallar[i]);
             }
+
+            // Ödev 1
+            // - Rastgele Sifre Ureten Metod -
+            // En az 1 tane büyük harf olucak
+            // En az 1 sayı olucak ve en az 8 karakter olucak
+
+            // Ödev 2
+            // - Verilen sayının asal sayı olup olmadığını belirleyen metod -
+
+
 
         }
 
