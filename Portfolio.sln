@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ornekler", "ornekler\ornekl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsAppPractice", "WinFormsAppPractice\WinFormsAppPractice.csproj", "{B37ED3ED-F4BE-4911-BC8D-FFD6259357AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsLecture", "MethodsLecture\MethodsLecture.csproj", "{3407BEFD-B700-4564-AC01-D232B982F21C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodsLecture", "MethodsLecture\MethodsLecture.csproj", "{3407BEFD-B700-4564-AC01-D232B982F21C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodDers2", "MetodDers2\MetodDers2.csproj", "{B9504F4E-A818-4C82-99C5-240B088E5BF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3407BEFD-B700-4564-AC01-D232B982F21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3407BEFD-B700-4564-AC01-D232B982F21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3407BEFD-B700-4564-AC01-D232B982F21C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9504F4E-A818-4C82-99C5-240B088E5BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9504F4E-A818-4C82-99C5-240B088E5BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9504F4E-A818-4C82-99C5-240B088E5BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9504F4E-A818-4C82-99C5-240B088E5BF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
