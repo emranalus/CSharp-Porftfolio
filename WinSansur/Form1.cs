@@ -28,7 +28,7 @@ namespace WinSansur
         {
             foreach (string item in listBox1.Items)
             {
-                textBox1.Text = textBox1.Text.Replace(item, "***");
+                textBox1.Text = textBox1.Text.Replace(item, "***", StringComparison.OrdinalIgnoreCase);
             }
         }
     }
