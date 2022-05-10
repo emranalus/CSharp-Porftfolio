@@ -35,6 +35,7 @@ namespace PersonelTakip
             if (txtUser.Text == "admin" && txtPass.Text == "qweasd")
             {
                 FormPersonelKayit personelFirm = new FormPersonelKayit();
+                personelFirm.Owner = this;
                 personelFirm.Show();
                 this.Hide();
             }
