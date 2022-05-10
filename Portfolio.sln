@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodDers2", "MetodDers2\Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinSansur", "WinSansur\WinSansur.csproj", "{7F469695-DCE3-4B98-ACDA-CEF669FF3FBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateMethods", "DateMethods\DateMethods.csproj", "{921D5465-28B8-42E4-AB88-40A2DF6DD8E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateMethods", "DateMethods\DateMethods.csproj", "{921D5465-28B8-42E4-AB88-40A2DF6DD8E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistem_IO", "Sistem_IO\Sistem_IO.csproj", "{0A2F66A7-56DE-4CCF-9963-61F3F2BC8417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sistem_IO", "Sistem_IO\Sistem_IO.csproj", "{0A2F66A7-56DE-4CCF-9963-61F3F2BC8417}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotePadProject", "NotePadProject\NotePadProject.csproj", "{70781CCC-AEBD-425D-8362-4403C184BA7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotePadProject", "NotePadProject\NotePadProject.csproj", "{70781CCC-AEBD-425D-8362-4403C184BA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelTakip", "PersonelTakip\PersonelTakip.csproj", "{6ECD4BA0-EFA6-4F26-B136-348A94861B38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{70781CCC-AEBD-425D-8362-4403C184BA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70781CCC-AEBD-425D-8362-4403C184BA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70781CCC-AEBD-425D-8362-4403C184BA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECD4BA0-EFA6-4F26-B136-348A94861B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECD4BA0-EFA6-4F26-B136-348A94861B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECD4BA0-EFA6-4F26-B136-348A94861B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECD4BA0-EFA6-4F26-B136-348A94861B38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
