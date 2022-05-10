@@ -35,7 +35,13 @@ namespace PersonelTakip
             string[] satirlar = File.ReadAllLines("Personel.txt");
             foreach (string satir in satirlar)
             {
-                string[] veriler = satir.Split("|");
+                string[] veriler = satir.Split("|"); 
+                adlar.Add(veriler[0]);
+                soyadlar.Add(veriler[1]);
+                gsmler.Add(veriler[2]);
+                tcnolari.Add(veriler[3]);
+                dogumtarihleri.Add(Convert.ToDateTime(veriler[4]));
+                emailler.Add(veriler[5]);
             }
         }
 
