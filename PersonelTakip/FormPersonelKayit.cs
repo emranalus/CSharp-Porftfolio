@@ -24,10 +24,46 @@ namespace PersonelTakip
         List<string> emailler = new List<string>();
 
         List<DateTime> dogumtarihleri = new List<DateTime>();
+        
+        List<Kisi> Kisiler = new List<Kisi>();
+
+        // Struct Tanımlaması
+        struct Kisi
+        {
+            public string Ad;
+            public string Soyad;
+            public string TcNo;
+            public string Gsm;
+            public string Email;
+            public DateTime DogumTarihi;
+            public Adres adres;
+        }
+
+        struct Adres
+        {
+            public string Il;
+            public string Ilce;
+            public string Cadde;
+            public string Sokak;
+            public string KapiNo;
+            public string DaireNo;
+        }
 
         private void FormPersonelKayit_Load(object sender, EventArgs e)
         {
-
+            // Örnek Struct Tanımlama
+            Kisi ahmet = new Kisi();
+            ahmet.Ad = "Ahmet";
+            ahmet.Soyad = "Yilmaz";
+            ahmet.TcNo = "12345678901";
+            ahmet.Email = "ahmetveli@gmail.com";
+            ahmet.DogumTarihi = DateTime.Now.AddYears(-20);
+            ahmet.adres.Il = "Istanbul";
+            ahmet.adres.Ilce = "Bakirkoy";
+            ahmet.adres.Cadde = "Ruheli";
+            ahmet.adres.Sokak = "5. Sokak";
+            ahmet.adres.KapiNo = "43";
+            ahmet.adres.DaireNo = "4";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,13 +72,29 @@ namespace PersonelTakip
             foreach (string satir in satirlar)
             {
                 string[] veriler = satir.Split("|"); 
-                adlar.Add(veriler[0]);
-                soyadlar.Add(veriler[1]);
-                gsmler.Add(veriler[2]);
-                tcnolari.Add(veriler[3]);
-                dogumtarihleri.Add(Convert.ToDateTime(veriler[4]));
-                emailler.Add(veriler[5]);
+                //adlar.Add(veriler[0]);
+                //soyadlar.Add(veriler[1]);
+                //gsmler.Add(veriler[2]);
+                //tcnolari.Add(veriler[3]);
+                //dogumtarihleri.Add(Convert.ToDateTime(veriler[4]));
+                //emailler.Add(veriler[5]);
+
+                Kisi kisi  = new Kisi();
+                kisi.Ad    = veriler[0];
+                kisi.Soyad = veriler[1];
+                kisi.Gsm   = veriler[2];
+                kisi.Email = veriler[3];
+                //kisi.TcNo  = veriler[4]; 
+                //kisi.DogumTarihi = Convert.ToDateTime(veriler[5]);
             }
+
+            for (int i = 0; i < satirlar.Length; i++)
+            {
+                string yazilacaksatir = adlar[i] + " - " + soyadlar[i] + " - " + gsmler[i] 
+                    + " - " + tcnolari[i];
+                listBox1.Items.Add(yazilacaksatir);
+            }
+
         }
 
         public FormPersonelKayit()
@@ -62,7 +114,7 @@ namespace PersonelTakip
 
         private void buttonKaydet_Click(object sender, EventArgs e)
         {
-
+            // Yanlış Örnek
             ad = txtAd.Text;
             soyad = txtSoyad.Text;
             tcno = txtTcNo.Text;
@@ -109,9 +161,18 @@ namespace PersonelTakip
                 return;
             }
 
-            
+            // Doğru Örnek
+            Kisi yeniKisi = new Kisi();
+            yeniKisi.Ad = ad;
+            yeniKisi.Soyad = soyad;
+            yeniKisi.TcNo = tcno;
+            yeniKisi.Gsm = gsm;
+            yeniKisi.Email = email;
+
+            Kisiler.Add(yeniKisi);
+
             StreamWriter sw =  File.CreateText(path);
-            sw.WriteLine(ad+"|"+soyad+ "|" + gsm + "|" + email + "|" + tcno);
+            sw.WriteLine(yeniKisi.Ad + "|" + yeniKisi.Soyad + "|" + yeniKisi.Gsm + "|" + yeniKisi.Email + "|" + yeniKisi.TcNo);
             sw.Close();
 
         }
