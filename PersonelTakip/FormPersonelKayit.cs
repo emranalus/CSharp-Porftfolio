@@ -28,7 +28,7 @@ namespace PersonelTakip
         List<Kisi> Kisiler = new List<Kisi>();
 
         // Struct Tanımlaması
-        struct Kisi
+        class Kisi
         {
             public string Ad;
             public string Soyad;
@@ -69,7 +69,7 @@ namespace PersonelTakip
             Kisi ahmet = new Kisi();
             ahmet.Ad = "Ahmet";
             ahmet.Soyad = "Yilmaz";
-            ahmet.TcNo = "12345678901";
+            //ahmet.TcNo = "12345678901";
             ahmet.Email = "ahmetveli@gmail.com";
             ahmet.DogumTarihi = DateTime.Now.AddYears(-20);
             ahmet.adres.Il = "Istanbul";
@@ -179,14 +179,14 @@ namespace PersonelTakip
             Kisi yeniKisi = new Kisi();
             yeniKisi.Ad = ad;
             yeniKisi.Soyad = soyad;
-            yeniKisi.TcNo = tcno;
+            //yeniKisi.TcNo = tcno;
             yeniKisi.Gsm = gsm;
             yeniKisi.Email = email;
 
             Kisiler.Add(yeniKisi);
 
             StreamWriter sw =  File.CreateText(path);
-            sw.WriteLine(yeniKisi.Ad + "|" + yeniKisi.Soyad + "|" + yeniKisi.Gsm + "|" + yeniKisi.Email + "|" + yeniKisi.TcNo);
+            sw.WriteLine(yeniKisi.Ad + "|" + yeniKisi.Soyad + "|" + yeniKisi.Gsm + "|" + yeniKisi.Email);
             sw.Close();
 
         }

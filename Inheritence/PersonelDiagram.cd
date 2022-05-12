@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Inheritence.Person" Collapsed="true">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAACAEAAAAAQABAAQAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritence.Personel" Collapsed="true">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Personel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritence.GenelMudur" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GenelMudur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritence.HRPersonel" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>HRPersonel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritence.ITPersonel" Collapsed="true">
+    <Position X="5.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAEAAAAAAA=</HashCode>
+      <FileName>ITPersonel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritence.Muhasebe" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Muhasebe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritence.SalesPerson" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAABAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SalesPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritence.SalesManager" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SalesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
