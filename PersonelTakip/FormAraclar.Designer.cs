@@ -42,7 +42,7 @@
             this.cmbDonanim = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.cmbMotor = new System.Windows.Forms.TextBox();
+            this.cmbYakit = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -161,24 +161,25 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(50, 213);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 15);
+            this.label7.Size = new System.Drawing.Size(32, 15);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Motor";
+            this.label7.Text = "Yakit";
             // 
-            // cmbMotor
+            // cmbYakit
             // 
-            this.cmbMotor.Location = new System.Drawing.Point(110, 210);
-            this.cmbMotor.Name = "cmbMotor";
-            this.cmbMotor.Size = new System.Drawing.Size(121, 23);
-            this.cmbMotor.TabIndex = 13;
+            this.cmbYakit.FormattingEnabled = true;
+            this.cmbYakit.Location = new System.Drawing.Point(110, 213);
+            this.cmbYakit.Name = "cmbYakit";
+            this.cmbYakit.Size = new System.Drawing.Size(121, 23);
+            this.cmbYakit.TabIndex = 15;
             // 
             // FormAraclar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(293, 308);
+            this.Controls.Add(this.cmbYakit);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cmbMotor);
             this.Controls.Add(this.cmbDonanim);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbVites);
@@ -216,6 +217,6 @@
         private System.Windows.Forms.ComboBox cmbDonanim;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox cmbMotor;
+        private System.Windows.Forms.ComboBox cmbYakit;
     }
 }

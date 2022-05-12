@@ -32,11 +32,25 @@ namespace PersonelTakip
         {
             public string Ad;
             public string Soyad;
-            public string TcNo;
+            private string TcNo 
+            {
+
+                get{ return TcNo.Substring(7); }
+                set
+                {
+                    if (value.Length == 11)
+                    {
+                        TcNo = value;
+                    }
+                }
+            
+            } // Prop
             public string Gsm;
             public string Email;
             public DateTime DogumTarihi;
             public Adres adres;
+
+           
         }
 
         struct Adres
