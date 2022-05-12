@@ -9,6 +9,9 @@ namespace Inheritence
             Person person = new Person("uhs","mnbtr");
             Personel personel = new Personel();
             personel.Name = "asd";
+
+            SmartPhone phone = new SmartPhone();
+            
         }
     }
 }
