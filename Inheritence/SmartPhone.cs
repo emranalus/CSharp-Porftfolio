@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Inheritence
 {
-
-    
-
     internal class SmartPhone : BaseTelefon
     {
 
