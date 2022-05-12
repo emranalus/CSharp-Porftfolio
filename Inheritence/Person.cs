@@ -9,6 +9,24 @@ namespace Inheritence
     internal class Person
     {
 
+        public Person()
+        {
+
+        }
+
+        public Person(string ad, string soyad)
+        {
+            Name = ad;
+            Surname = soyad;
+        }
+
+        public Person(string ad, string soyad, string tcno)
+        {
+            Name = ad;
+            Surname = soyad;
+            TcNo = tcno;
+        }
+
         public string Name { get; set; }
         public string Surname { get; set; }
         public string TcNo { get; set; }
