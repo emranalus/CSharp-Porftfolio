@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelTakip", "PersonelTa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{AFD47536-04FC-4D8F-82BE-A8545703D0CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritence", "Inheritence\Inheritence.csproj", "{523F1869-987C-4B74-B8E0-23B6785351F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritence", "Inheritence\Inheritence.csproj", "{523F1869-987C-4B74-B8E0-23B6785351F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyMorphism", "PolyMorphism\PolyMorphism.csproj", "{D1E09E94-B569-4E10-B2C8-3359B33DE1F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,12 +79,17 @@ Global
 		{523F1869-987C-4B74-B8E0-23B6785351F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{523F1869-987C-4B74-B8E0-23B6785351F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{523F1869-987C-4B74-B8E0-23B6785351F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E09E94-B569-4E10-B2C8-3359B33DE1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E09E94-B569-4E10-B2C8-3359B33DE1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E09E94-B569-4E10-B2C8-3359B33DE1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E09E94-B569-4E10-B2C8-3359B33DE1F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{523F1869-987C-4B74-B8E0-23B6785351F8} = {AFD47536-04FC-4D8F-82BE-A8545703D0CF}
+		{D1E09E94-B569-4E10-B2C8-3359B33DE1F0} = {AFD47536-04FC-4D8F-82BE-A8545703D0CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {101F2C01-F96B-4D9F-AD9A-2FE422F15D0C}
