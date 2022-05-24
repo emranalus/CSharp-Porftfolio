@@ -1,0 +1,9 @@
+﻿Sehirler arasi nakliye firmalarini dusunelim
+Igdirdan edirneye tasianacak bir ailenin esyalarinin nakliyesi icin
+3 farkli sehirde lojistik firmalari yer aliyor olsun
+
+Igdirdan Sivasa "X Firmasi"
+Sivastan Ankaraya "Y Firmasi"
+Ankaradan Edirneye "Z Firmasi"
+
+Nakliye operasyonunda bulunuyor olsun
