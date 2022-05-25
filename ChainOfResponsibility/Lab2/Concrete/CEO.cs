@@ -10,7 +10,7 @@ namespace ChainOfResponsibility.Lab2.Concrete
     {
         public override void ManageCosts(Cost cost)
         {
-            if (cost.Amount >= 500)
+            if (cost.Amount >= 500 && cost.Amount < 5000)
             {
                 Console.WriteLine("This cost has been generated bu the CEO of the company!");
             }
