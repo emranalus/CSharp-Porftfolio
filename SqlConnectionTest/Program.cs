@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace SqlConnectionTest
@@ -8,7 +9,43 @@ namespace SqlConnectionTest
         static void Main(string[] args)
         {
             //SqlBaglanti();
-            SqlKayitEkle();
+            //SqlKayitEkle();
+
+            GetShippers();
+        }
+
+        public static void GetShippers()
+        {
+
+            List<Shipper> shippers = new List<Shipper>();
+
+            string sqlCommand = "select * from Shippers";
+            string constr =
+                "Server=localhost;" +
+                "Database=Northwind;" +
+                "User Id=sa;" +
+                "Password=123;";
+
+            SqlConnection db = new SqlConnection(constr);
+            db.Open();
+            Console.WriteLine("Connection Status: " + db.State);
+
+            // If a set of data comes we greet the dataset with SqlDataReader
+            SqlCommand cmd = new SqlCommand(sqlCommand, db);
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                Console.WriteLine(rdr["CompanyName"] + " " + rdr["Phone"]);
+                Shipper kargocu = new Shipper();
+                kargocu.ShipperId = (int)rdr["ShipperId"];
+                kargocu.CompanyName = (string)rdr["CompanyName"];
+                kargocu.Phone = (string)rdr["Phone"];
+            }
+
+            //Console.WriteLine("Hello World!");
+            db.Close();
+            Console.WriteLine("Connection Status: " + db.State);
         }
 
         public static void SqlKayitEkle()
@@ -27,6 +64,7 @@ namespace SqlConnectionTest
                 
                 sqlConnection.Open();
                 SqlCommand cmd = new SqlCommand(sqlkomut, sqlConnection);
+
                 int sonuc = cmd.ExecuteNonQuery();
                 if (sonuc > 0)
                 {
