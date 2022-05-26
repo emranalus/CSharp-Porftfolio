@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.202
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tryCatch", "tryCatch\tryCatch.csproj", "{B6E5B5E4-6370-43AA-B51F-A2533235744C}"
 EndProject
@@ -43,17 +43,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIP", "DIP\DIP.csproj", "{9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{3ABECA3D-686E-4C25-86F7-453DB192C0DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationalDesignPattern", "CreationalDesignPattern\CreationalDesignPattern.csproj", "{AFBCF5B5-764A-4D1C-963E-A68BFA27A021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreationalDesignPattern", "CreationalDesignPattern\CreationalDesignPattern.csproj", "{AFBCF5B5-764A-4D1C-963E-A68BFA27A021}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehiveoralPatterns", "BehiveoralPatterns", "{939CB373-24B6-42DE-BE77-599EF58E2BEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPattern", "MediatorPattern\MediatorPattern.csproj", "{262974B6-12F5-499D-9268-BC366A4DEE6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorPattern", "MediatorPattern\MediatorPattern.csproj", "{262974B6-12F5-499D-9268-BC366A4DEE6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{8C0B52AD-690B-45AE-BE2D-3AF906F74983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{8C0B52AD-690B-45AE-BE2D-3AF906F74983}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralPatterns", "StructuralPatterns", "{D2A77433-0C64-40E7-83FA-AB091D792D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{938C3671-7DA8-4727-A218-01D56DA2D840}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{938C3671-7DA8-4727-A218-01D56DA2D840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlConnectionPractice", "SqlConnectionPractice", "{D9A94B6A-9196-4060-AEF8-1EA04D45FE67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlConnectionTest", "SqlConnectionTest\SqlConnectionTest.csproj", "{80E64D0B-608F-4C41-8B1E-D043088B380E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +153,10 @@ Global
 		{938C3671-7DA8-4727-A218-01D56DA2D840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938C3671-7DA8-4727-A218-01D56DA2D840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{938C3671-7DA8-4727-A218-01D56DA2D840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E64D0B-608F-4C41-8B1E-D043088B380E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E64D0B-608F-4C41-8B1E-D043088B380E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E64D0B-608F-4C41-8B1E-D043088B380E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E64D0B-608F-4C41-8B1E-D043088B380E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +176,7 @@ Global
 		{8C0B52AD-690B-45AE-BE2D-3AF906F74983} = {939CB373-24B6-42DE-BE77-599EF58E2BEA}
 		{D2A77433-0C64-40E7-83FA-AB091D792D65} = {3ABECA3D-686E-4C25-86F7-453DB192C0DE}
 		{938C3671-7DA8-4727-A218-01D56DA2D840} = {D2A77433-0C64-40E7-83FA-AB091D792D65}
+		{80E64D0B-608F-4C41-8B1E-D043088B380E} = {D9A94B6A-9196-4060-AEF8-1EA04D45FE67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {101F2C01-F96B-4D9F-AD9A-2FE422F15D0C}
