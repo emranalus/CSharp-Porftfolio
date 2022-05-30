@@ -12,7 +12,9 @@ namespace EntitiyFWBeginner.Model.Concrete
 
         public string Name { get; set; }
         public string Description { get; set; }
-
-
+        
+        // One to many relationship
+        public List<Product> products { get; set; }
+        
     }
 }
