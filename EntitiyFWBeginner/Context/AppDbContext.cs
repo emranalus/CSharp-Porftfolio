@@ -19,5 +19,14 @@ namespace EntitiyFWBeginner.Context
             optionsBuilder.UseSqlServer(@"Server=.;Database=Sample1;User Id=sa;Password=123;");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Category>().HasQueryFilter(p=>p.status!=EntitiyFWBeginner.Model.Abstract.Status.Passive);
+
+            modelBuilder.Entity<Product>().HasQueryFilter(p => p.status != EntitiyFWBeginner.Model.Abstract.Status.Passive);
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }
