@@ -55,13 +55,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralPatterns", "Struc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{938C3671-7DA8-4727-A218-01D56DA2D840}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlConnectionPractice", "SqlConnectionPractice", "{D9A94B6A-9196-4060-AEF8-1EA04D45FE67}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{D9A94B6A-9196-4060-AEF8-1EA04D45FE67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlConnectionTest", "SqlConnectionTest\SqlConnectionTest.csproj", "{80E64D0B-608F-4C41-8B1E-D043088B380E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlConnectionTest", "SqlConnectionTest\SqlConnectionTest.csproj", "{80E64D0B-608F-4C41-8B1E-D043088B380E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreConnection", "PostgreConnection\PostgreConnection.csproj", "{A0694340-F2A5-4425-9BD6-C698A3527FB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreConnection", "PostgreConnection\PostgreConnection.csproj", "{A0694340-F2A5-4425-9BD6-C698A3527FB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinSql", "WinSql\WinSql.csproj", "{A1F481BF-65B2-4F03-AC7B-C187068134B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinSql", "WinSql\WinSql.csproj", "{A1F481BF-65B2-4F03-AC7B-C187068134B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiyFWBeginner", "EntitiyFWBeginner\EntitiyFWBeginner.csproj", "{FC282338-7199-4C86-BA29-798DF60A557C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +171,10 @@ Global
 		{A1F481BF-65B2-4F03-AC7B-C187068134B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1F481BF-65B2-4F03-AC7B-C187068134B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1F481BF-65B2-4F03-AC7B-C187068134B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC282338-7199-4C86-BA29-798DF60A557C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC282338-7199-4C86-BA29-798DF60A557C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC282338-7199-4C86-BA29-798DF60A557C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC282338-7199-4C86-BA29-798DF60A557C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +197,7 @@ Global
 		{80E64D0B-608F-4C41-8B1E-D043088B380E} = {D9A94B6A-9196-4060-AEF8-1EA04D45FE67}
 		{A0694340-F2A5-4425-9BD6-C698A3527FB5} = {D9A94B6A-9196-4060-AEF8-1EA04D45FE67}
 		{A1F481BF-65B2-4F03-AC7B-C187068134B5} = {D9A94B6A-9196-4060-AEF8-1EA04D45FE67}
+		{FC282338-7199-4C86-BA29-798DF60A557C} = {D9A94B6A-9196-4060-AEF8-1EA04D45FE67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {101F2C01-F96B-4D9F-AD9A-2FE422F15D0C}
