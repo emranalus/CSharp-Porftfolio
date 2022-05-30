@@ -14,7 +14,8 @@ namespace EntitiyFWBeginner.Model.Concrete
         public string Description { get; set; }
         public double Price { get; set; }
 
-        // Part that will be shown in the database
+        // Part that will be shown in the database 
+        // as a foreign key
         public int CategoryId { get; set; }
 
         // Part that will be used as navigation property
