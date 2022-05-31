@@ -11,7 +11,7 @@ What must be done
 -------------------
 First I will need entites for books and customers than I will need a entity for category
 and author for the books then I have to be able to see our book stock and customer list
-with the books they have
+with the books they have then finally we need orders to bind the two
 
 Required Entities
 -------------------
@@ -19,8 +19,10 @@ Required Entities
 -- Customer
 -- Author
 -- Category
+-- Order
 
 Releationships
 ----------------
 -- One customer can have multiple books
-
+-- There will be Orders which customers will be given books
+-- One author can write multiple books

@@ -75,7 +75,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderBranch", "OrderBranch\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEntity", "NorthwindEntity\NorthwindEntity.csproj", "{9D0CA09A-7314-4444-9BE5-C54C28CF45F5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF_Myself", "EF_Myself", "{F2BD225F-033B-4DCB-8C4F-9FFB1E14115C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bookstore", "Bookstore", "{F2BD225F-033B-4DCB-8C4F-9FFB1E14115C}"
 	ProjectSection(SolutionItems) = preProject
 		ProjectPlanning.txt = ProjectPlanning.txt
 	EndProjectSection

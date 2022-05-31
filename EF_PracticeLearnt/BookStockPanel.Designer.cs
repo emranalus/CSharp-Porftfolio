@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_AuthorName = new System.Windows.Forms.TextBox();
             this.txt_Quantity = new System.Windows.Forms.TextBox();
-            this.Id = new System.Windows.Forms.Label();
+            this.Label_ID = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
@@ -63,7 +63,7 @@
             // 
             // txt_BookName
             // 
-            this.txt_BookName.Location = new System.Drawing.Point(136, 24);
+            this.txt_BookName.Location = new System.Drawing.Point(132, 16);
             this.txt_BookName.Name = "txt_BookName";
             this.txt_BookName.Size = new System.Drawing.Size(242, 23);
             this.txt_BookName.TabIndex = 2;
@@ -71,7 +71,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 27);
+            this.label1.Location = new System.Drawing.Point(27, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 15);
             this.label1.TabIndex = 3;
@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 56);
+            this.label2.Location = new System.Drawing.Point(27, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 15);
             this.label2.TabIndex = 4;
@@ -89,7 +89,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 87);
+            this.label3.Location = new System.Drawing.Point(27, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 15);
             this.label3.TabIndex = 5;
@@ -97,26 +97,26 @@
             // 
             // txt_AuthorName
             // 
-            this.txt_AuthorName.Location = new System.Drawing.Point(136, 53);
+            this.txt_AuthorName.Location = new System.Drawing.Point(132, 45);
             this.txt_AuthorName.Name = "txt_AuthorName";
             this.txt_AuthorName.Size = new System.Drawing.Size(242, 23);
             this.txt_AuthorName.TabIndex = 6;
             // 
             // txt_Quantity
             // 
-            this.txt_Quantity.Location = new System.Drawing.Point(136, 84);
+            this.txt_Quantity.Location = new System.Drawing.Point(132, 76);
             this.txt_Quantity.Name = "txt_Quantity";
             this.txt_Quantity.Size = new System.Drawing.Size(242, 23);
             this.txt_Quantity.TabIndex = 7;
             // 
-            // Id
+            // Label_ID
             // 
-            this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(12, 104);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(38, 15);
-            this.Id.TabIndex = 8;
-            this.Id.Text = "label4";
+            this.Label_ID.AutoSize = true;
+            this.Label_ID.Location = new System.Drawing.Point(12, 104);
+            this.Label_ID.Name = "Label_ID";
+            this.Label_ID.Size = new System.Drawing.Size(17, 15);
+            this.Label_ID.TabIndex = 8;
+            this.Label_ID.Text = "Id";
             // 
             // btn_Save
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_Save);
-            this.Controls.Add(this.Id);
+            this.Controls.Add(this.Label_ID);
             this.Controls.Add(this.txt_Quantity);
             this.Controls.Add(this.txt_AuthorName);
             this.Controls.Add(this.label3);
@@ -180,7 +180,7 @@
         private Label label3;
         private TextBox txt_AuthorName;
         private TextBox txt_Quantity;
-        private Label Id;
+        private Label Label_ID;
         private Button btn_Save;
         private Button btn_Update;
         private Button btn_Delete;
