@@ -20,7 +20,7 @@ namespace OrderBranch.EF.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(@"Server=.;Database=yeehaw;User Id=postgres;Password=123;");
+            optionsBuilder.UseNpgsql(@"Server=localhost;Database=yeehaw;User Id=postgres;Password=123;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

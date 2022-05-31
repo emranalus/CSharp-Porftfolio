@@ -1,0 +1,26 @@
+Bookstore stock management program
+-----------------------------------
+In this program our customer wants to be able to see what book do they have and in what
+quantities then the customer wants to be able to see who took what book from the bookstore
+and in what quantities.
+
+I will take a CodeFirst aproach to this problem since our customer might change his/her
+sql server management softwere for example postgres -> mssql.
+
+What must be done
+-------------------
+First I will need entites for books and customers than I will need a entity for category
+and author for the books then I have to be able to see our book stock and customer list
+with the books they have
+
+Required Entities
+-------------------
+-- Book
+-- Customer
+-- Author
+-- Category
+
+Releationships
+----------------
+-- One customer can have multiple books
+

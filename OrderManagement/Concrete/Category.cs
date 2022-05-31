@@ -3,7 +3,7 @@
     public class Category
     {
 
-        // you get the idea
+        public int CategoryId { get; set; }
 
     }
 }
