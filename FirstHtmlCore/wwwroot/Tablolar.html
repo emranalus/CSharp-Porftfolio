@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <p>
+        Verileri düzenli olarak göstermek için kullanılır.
+        <br />
+        Örnek: tr (Table Row) td "Table Data"
+    </p>
+
+    <p>
+        Bazı Özellikleri:
+        <ul>
+            <li>Width: Tablonun genişliğini belirler</li>
+            <li>Height: Tablonun yüksekliğini belirler</li>
+            <li>Border: Tablonun iç ve dış çerçevelerini belirler</li>
+            <li>Cellspacing: Tablonun hücrelerinin arasıdaki
+            uzaklığı belirler
+            </li>
+            <li>Cellpadding: Tablonun içersindeki değerlerin
+            dış çerçeveye olan uzaklığı
+            </li>
+            <li>Colspan: Hücrelerin birleştirilmesini sağlar</li>
+            <li>Rowspan: Satırların birleştirilmesini sağlar</li>
+            <li>Thead: Table Head yani tablo başlıkları</li>
+            <li>TBody: Table içerisine basılacak veriler buraya tanimlanir</li>
+        </ul>
+    </p>
+
+    <table width="100%" border="5" cellspacing="5" cellpadding="5">
+        <tr>
+            <td>Adı</td>
+            <td>Soyadı</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Yılmaz</td>
+        </tr>
+        <tr>
+            <td>Ayşe</td>
+            <td>Kaya</td>
+        </tr>
+        <tr>
+            <td>Hasan</td>
+            <td>Gezer</td>
+        </tr>
+        <tr>
+            <td>Fatma</td>
+            <td>Yapıcı</td>
+        </tr>
+    </table>
+    <br />
+    <table border="3" cellspacing="5" cellpadding="5" >
+        <thead>
+            <tr>
+                <td>Adı</td>
+                <td>Soyadı</td>
+                <th>TC No</th>
+                <!-- th td'den bağımsız olarak veriyi ortalar
+                    ve kalın puntolarla yazar -->
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <center>
+                        <strong>
+                            Bu tablo içerisinde sınıf mevcudu yer almaktadır.
+                        </strong>
+                    </center>
+                </td>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            
+            <tr>
+                <td>Ali</td>
+                <td>Yılmaz</td>
+            </tr>
+            <tr>
+                <td>Ayşe</td>
+                <td>Kaya</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>Gezer</td>
+            </tr>
+            <tr>
+                <td>Fatma</td>
+                <td>Yapıcı</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
