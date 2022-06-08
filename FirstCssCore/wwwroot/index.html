@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Wassup Beijing</title>
+    <style type="text/css">
+        /*
+            Sitenin tamamında geçerli olacak bir stiliniz var ise mesela yazı tipi,
+            yazı boyutu, arka plan rengi bunu body css elementi içerisine atabiliriz.
+
+            Eğer sitenizin arkaplaninda bir image kullanılacaksa css teknikleri büyük 
+            boyutlu fotoları kullanmamamızı önerir, sebebi ise tarayici 
+            tarafindaki performans kaybıdır.
+
+            Bunun yerine kullanılan teknik genişlik olarak 1px'lik foto kullanılması ve enine
+            repeat-x yada boyuna repeat-y olarak uzatmaktadır.
+        */
+
+        body
+        {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:13px;
+            background-color:azure;
+        }
+
+        #maincontainer
+        {
+            margin-top:50px;
+            width:1080px;
+            height:auto;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        #banner
+        {
+            border-radius: 10px 10px 0px 0px;
+            width:1080px;
+            height:120px;
+            background-color:darkslateblue;
+        }
+
+        #content
+        {
+            width:500px;
+            height:630px;
+            background-color:burlywood;
+            float:left;
+        }
+
+        #footer
+        {
+            width:1080px;
+            height:100px;
+            background-color:aqua;
+            float:left;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .menu
+        {
+            height:100px;
+            width:580px;
+            background-color:cadetblue;
+            float:left;
+            border-radius: 10px 10px 10px 10px
+        }
+
+        .pitalik
+        {
+            font-style:italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="maincontainer">
+
+        <div id="banner" class="pitalik">
+            <h1> Burasi Reklam Alanıdır! </h1>
+        </div>
+
+        <div id="menu">
+            <p> Menu Alanı </p>
+        </div>
+
+        <div id="content" class="pitalik">
+            <p> İçerik Alanı </p>
+        </div>
+
+        <div class="menu">
+            <p> Diğer Menü </p>
+        </div>
+
+        <div id="footer">
+            <p> Alt Kısım </p>
+        </div>
+        <br />
+
+    </div>
+
+</body>
+</html>
