@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TC No Alert</title>
+    <style type="text/css">
+
+        body{
+            background-color:#242323;
+        }
+
+        label{
+            color:white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input{
+            
+            border-color:red;
+            border-width:3px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        button{
+            border-radius: 10px 10px 10px 10px;
+            background-color: red;
+        }
+
+        .printer {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .box{
+            padding: 10px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        
+        function tcnocheck (tc) {
+            let TextLength = tc.length;
+
+            if (TextLength != 11) {
+                alert("TC No 11 Haneli Olmalıdır!");
+                
+            }
+            else if (isNaN(tc)) {
+                alert("TC No Sayılardan Oluşmalıdır!")
+            }
+            else {
+                return tc;
+            }
+            
+        }
+
+        function adcheck(ad) {
+            if (/^[a-zA-Z]+$/.test(ad)) {
+                return ad;
+            }
+            else {
+                alert("Adınız Harflerden Oluşmalıdır!")
+            }
+        }
+
+        function soyadcheck(soyad) {
+            if (/^[a-zA-Z]+$/.test(soyad)) {
+                return soyad;
+            }
+            else {
+                alert("Soyadınız Harflerden Oluşmalıdır!")
+            }
+        }
+
+        function gsmnocheck(gsmno) {
+            let TextLength = gsmno.length;
+
+            if (TextLength != 11) {
+                alert("GSM No 11 Haneli Olmalıdır! \nNOT: Başına 0 Ekleyiniz.");
+
+            }
+            else if (isNaN(gsmno)) {
+                alert("GSM No Sayılardan Oluşmalıdır!")
+            }
+            else {
+                return gsmno;
+            }
+
+        }
+
+        const getValueInput = () =>
+        {
+            let inputValue;
+
+            inputValue = document.getElementById('TcNoInput').value;
+            document.getElementById('TcnoTextDiv').innerHTML = "TC No'nuz: " + tcnocheck(inputValue);
+
+            inputValue = document.getElementById('AdInput').value;
+            document.getElementById('AdTextDiv').innerHTML = "Adınız: " + adcheck(inputValue);
+
+            inputValue = document.getElementById('SoyadInput').value;
+            document.getElementById('SoyadTextDiv').innerHTML = "Soyadınız: " + soyadcheck(inputValue);
+
+            inputValue = document.getElementById('GsmInput').value;
+            document.getElementById('GsmTextDiv').innerHTML = "Gsm No'nuz: " + gsmnocheck(inputValue);
+
+        }
+
+    </script>
+</head>
+<!--  -->
+<body>
+
+    <div class="main">
+
+        <label for="Tcno">TC No:</label>
+        <div class="box">
+            <input type="text" name="name" value="" id="TcNoInput" />
+        </div>
+
+        <label for="Ad">Adi:</label>
+        <div class="box">
+            <input type="text" name="name" value="" id="AdInput" />
+        </div>
+
+        <label for="Soyad">Soyadi:</label>
+        <div class="box">
+            <input type="text" name="name" value="" id="SoyadInput" />
+        </div>
+
+        <label for="Gsm">Gsm:</label>
+        <div class="box">
+            <input type="text" name="name" value="" id="GsmInput" />
+        </div>
+
+
+        <div class="box">
+            <button onclick="getValueInput()">Kaydet</button>
+        </div>
+
+        <div id="TcnoTextDiv" class="printer"></div>
+        <div id="AdTextDiv" class="printer"></div>
+        <div id="SoyadTextDiv" class="printer"></div>
+        <div id="GsmTextDiv" class="printer"></div>
+
+    </div>
+
+</body>
+</html>
