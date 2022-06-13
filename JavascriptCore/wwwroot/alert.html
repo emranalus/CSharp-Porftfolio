@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <title>TC No Alert</title>
+    <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />-->
     <style type="text/css">
 
-        body{
-            background-color:#242323;
+        body {
+            background-color: #242323;
         }
 
-        label{
-            color:white;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        label {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
-        input{
-            
-            border-color:red;
-            border-width:3px;
+        input {
+            border-color: red;
+            border-width: 3px;
             border-radius: 10px 10px 10px 10px;
         }
 
-        button{
+        button {
             border-radius: 10px 10px 10px 10px;
             background-color: red;
         }
@@ -31,19 +31,18 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
-        .box{
+        .box {
             padding: 10px;
         }
-
     </style>
     <script type="text/javascript">
-        
-        function tcnocheck (tc) {
+
+        function tcnocheck(tc) {
             let TextLength = tc.length;
 
             if (TextLength != 11) {
                 alert("TC No 11 Haneli Olmalıdır!");
-                
+
             }
             else if (isNaN(tc)) {
                 alert("TC No Sayılardan Oluşmalıdır!")
@@ -51,7 +50,7 @@
             else {
                 return tc;
             }
-            
+
         }
 
         function adcheck(ad) {
@@ -88,8 +87,7 @@
 
         }
 
-        const getValueInput = () =>
-        {
+        const getValueInput = () => {
             let inputValue;
 
             inputValue = document.getElementById('TcNoInput').value;
