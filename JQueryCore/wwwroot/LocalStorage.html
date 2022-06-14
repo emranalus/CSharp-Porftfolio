@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Local Storage</title>
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <p id="sayac"></p>
+            <p>Lütfen Sayfayi 'Refresh' Ediniz</p>
+
+        </div>
+
+    </div>
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // "sayac", sayac -> key, value
+            // localStorage.getItem -> var olan local storagelarin icerisinde sayac olanlari getirir
+            let sayac = localStorage.getItem("sayac", sayac);
+
+            // Arttır ata
+            sayac++;
+            localStorage.setItem("sayac", sayac);
+
+            // id bul bastır
+            $("#sayac").html("Sayac: " + sayac);
+
+        });
+
+    </script>
+
+</body>
+</html>
