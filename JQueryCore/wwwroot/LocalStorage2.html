@@ -2,10 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Bu Sefer Olucak!</title>
-    
+    <title></title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    
 
 </head>
 <body>
@@ -19,7 +17,6 @@
                 <div class="row">
 
                     <div class="card">
-                        
                         <div class="card-body">
 
                             <div class="col-sm-4">
@@ -27,91 +24,76 @@
                                 <div class="form-group">
 
                                     <label>
-                                        Name: <input type="text" name="key" value="" class="form-control" />
+                                        name: <input type="text" name="key" class="form-control" />
                                     </label>
 
                                 </div>
-
                                 <div class="form-group">
 
                                     <label>
-                                        Data: <input type="text" name="data" value="" class="form-control" />
+                                        Data: <input type="text" name="data" class="form-control" />
                                     </label>
 
                                 </div>
-
-                                <input 
-                                       type="button" 
-                                       class="btn btn-info" 
-                                       value="Set Item" 
-                                       style="margin-top:10px;" 
-                                />
-
-                                <div class="col-sm-8">
-                                    <h2>Items</h2>
-
-                                    <table class="table table-hover" id="pairs">
-                                    </table>
-
-                                    <label>
-                                        <input type="button"
-                                               name="name"
-                                               value="Clear"
-                                               onclick="doClear()"
-                                               class="btn btn-danger"
-                                        />
-                                    </label>
-
-                                </div>
-
+                                <input type="button"
+                                       class="btn btn-info"
+                                       value="Set Item"
+                                       style="margin-top:10px" onclick="doSetItem()" />
                             </div>
-
+                            <div class="col-sm-8">
+                                <h2>Items</h2>
+                                <table class="table table-hower" id="pairs">
+                                </table>
+                                <label>
+                                    <input type="button"
+                                           name="name"
+                                           value="Clear"
+                                           onclick="doClear()"
+                                           class="btn btn-danger" />
+                                </label>
+                            </div>
                         </div>
-                    
-                    </div>
 
+                    </div>
                 </div>
+
             </form>
 
         </div>
-
     </div>
+
 
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    
     <script type="text/javascript">
-
         function doClear() {
             localStorage.clear();
             doShowAll();
         }
-
         function doShowAll() {
-            let key = "";
-            let pairs = "<tr><th>Name</th><th>Value</th></tr>\n"
+            var key = "";
+            var pairs = "<tr><th>Name</th><th>Value</th></tr>\n";
 
             for (var i = 0; i < localStorage.length; i++) {
                 key = localStorage.key(i);
                 pairs += "<tr><td>" + key + "</td>\n<td>" + localStorage.getItem(key) + "</td></tr>\n";
-
-                // Eger degiskende herhangi bir deger yok ise
-                if (pairs == "<tr><th>Name</th><th>Value</th></tr>\n") {
-                    pairs += "<tr><th><i>empty</i></th><i>empty</i></tr>\n"; 
-                }
             }
 
-            document.getElementById("#pairs").innerHTML = pairs;
-
+            //Eger pairs  degiskeninde herhangi bir deger yok ise
+            if (pairs == "<tr><th>Name</th><th>Value</th></tr>\n") {
+                pairs += "<tr><td><i>empty</i></td><td><i>empty</i></td></tr>\n"
+            }
+            document.getElementById("pairs").innerHTML = pairs;
         }
 
         function doSetItem() {
-            // Document icerisindeki formun editore sahip olanin value'su
-            let name = document.forms.editor.key.value;
-            let data = document.forms.editor.data.value;
+            //document icerisindeki formun editore sahip olanin value'su
+            var name = document.forms.editor.key.value;
+            var data = document.forms.editor.data.value;
             localStorage.setItem(name, data);
             doShowAll();
         }
-
     </script>
 </body>
 </html>

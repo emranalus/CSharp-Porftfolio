@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+
+        .metin{
+            width:  170px;
+            height: 150px;
+            float:  left;
+            
+            margin-right:  12px;
+            border-radius: 10px 10px 10px 10px;
+            
+            line-height: 150px;
+            text-align:  center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:   large;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-lg-12">
+                        <p id="metin1" lang="tr" class="metin" style="background-color:#FFDC00">metin1</p>
+                        <p id="metin2" lang="en" class="metin" style="background-color:#FF851B">metin2</p>
+                        <p id="metin3" lang="tr" class="metin" style="background-color:#FF4136">metin3</p>
+                        <p id="BaMetin4" lang="fr" class="metin" style="background-color:#01FF70">BaMetin4</p>
+                        <p id="metin5" lang="tr" class="metin" style="background-color:#F012BE">metin5</p>
+                        <p id="BaMetin6" lang="tr" class="metin" style="background-color:#39CCCC">BaMetin6</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top:40px;">
+                <div class="card-body">
+                    <div class="col-lg-12">
+                        <div class="btn-group">
+
+                            <a id="bir" class="btn btn-primary">Örnek Bir</a>
+                            <a id="iki" class="btn btn-secondary">Örnek İki</a>
+                            <a id="uc" class="btn btn-info">Örnek Üç</a>
+                            <a id="dort" class="btn btn-danger">Örnek Dört</a>
+                            <a id="bes" class="btn btn-light">Örnek Beş</a>
+                            <a id="alti" class="btn btn-outline-primary">Örnek Altı</a>
+                            <a id="yedi" class="btn btn-outline-secondary">Örnek Yedi</a>
+                            <a id="sekiz" class="btn btn-outline-info">Örnek Sekiz</a>
+                            <a id="dokuz" class="btn btn-outline-warning">Örnek Dokuz</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+
+        // Browser üzerinde bütün doküman oluştuktan sorna çalışacak kodlar
+        $(document).ready(function () {
+
+            $("#bir").click(function () {
+                $('p').html('');
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
