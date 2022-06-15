@@ -39,6 +39,8 @@
                 </div>
             </div>
 
+            <p id="metin"></p>
+
             <div class="card" style="margin-top:40px;">
                 <div class="card-body">
                     <div class="col-lg-12">
@@ -72,6 +74,28 @@
 
             $("#bir").click(function () {
                 $('p').html('');
+                $("#metin").html('Sayfa üzerindeki tüm p etiketlerinin içeriğine merhaba jquery yazdıralım!');
+                $('p').html('Merhaba JQuery!');
+            });
+
+            $("#iki").click(function () {
+                $("#metin").html("id si metins olan");
+                $("p#metin1").html("Mars is Heaven!!");
+            });
+
+            $("#uc").click(function () {
+                $("#metin").html("Id'si metin1 ve metin2 olan p'lerin HTML'ilini degistirmek");
+                $("#metin1, #metin2").html("Merhaba Jüpiter!!");
+            });
+
+            $("#dort").click(function () {
+                $("#metin").html("Language tr olan p lerin HTMl icerigini degistir");
+                $("p[lang=tr]").html("Merhaba Venus!!");
+            });
+
+            $("#bes").click(function () {
+                $("#metin").html("Language tr olan p lerin HTMl icerigini degistir");
+                $("p[lang=tr], p[lang=en]").html("Merhaba Neptün!!");
             });
 
         });
